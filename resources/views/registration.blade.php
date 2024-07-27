@@ -373,7 +373,11 @@
                 success: function (response) {
                     console.log(response);
                     if (response.status == 'success') {
-                        Swal.fire("SweetAlert2 is working!");
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Application Submitted',
+                            text: response.message,
+                        });
                     } else {
                         Swal.fire({
                             icon: 'error',

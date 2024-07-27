@@ -52,7 +52,7 @@ class ApplicantController extends Controller
 
         try {
             Applicant::create($data);
-            return ['status' => 'success', 'message' => ' Registered successfully'];
+            return ['status' => 'success', 'message' => 'Your application has been submitted. We will contact you soon. Thank you!'];
         } catch (\Exception $e) {
             return ['status' => 'error', 'message' => $e->getMessage()];
         }
