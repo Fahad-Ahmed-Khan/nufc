@@ -377,6 +377,9 @@
                             icon: 'success',
                             title: 'Application Submitted',
                             text: response.message,
+                            button: 'Ok',
+                        }).then(function () {
+                            window.location.href = '/';
                         });
                     } else {
                         Swal.fire({
