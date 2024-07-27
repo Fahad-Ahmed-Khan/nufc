@@ -3,7 +3,7 @@
 <head>
     <!-- meta tag -->
     <meta charset="utf-8">
-    <title>Khelo | Sports HTML Template</title>
+    <title>NUFC | Nilore United Football Club</title>
     <meta name="description" content="">
     <!-- responsive tag -->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
