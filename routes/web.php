@@ -18,6 +18,6 @@ Route::get('/admin/login', function () {
 })->name('admin.login');
 
 Route::get('/admin', function () {
-    $applicants = Applicant::distinct('name')->get();
+    $applicants = Applicant::select("*")->groupBy('name')->orderBy('id', 'desc')->get();
     return view('admin.layout.app', compact('applicants'));
 })->name('admin.login');
