@@ -24,4 +24,12 @@ class Applicant extends Model
         'why',
         'social_links'
     ];
+
+
+    public function getImageUrlAttribute()
+    {
+        return config('app.url') . '/storage/' . $this->attributes['profile_picture'];
+    }
+
+
 }
